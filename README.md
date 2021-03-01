@@ -11,7 +11,7 @@
       
  ### Code 
   
-<details><summary><b>Pseudocode 1</b></summary>
+ #### Pseudocode 1
  
  ```C++
 
@@ -46,8 +46,7 @@ Magnet.off
 
 
  ```
-</details>
-<details><summary><b>Pseudocode 2</b></summary>
+ #### Pseudocode 2
  
  ```C++
 
@@ -60,7 +59,7 @@ Servo_Y.attach(n)
 Servo_3.attach(n) 
 
 
-Move.arm (2)
+Move.arm ()
 	Servo_x.angleread(ፀx0) 
 	Servo_y.angleread(ፀy0)
 	
@@ -85,22 +84,22 @@ Magnet.on()
 	Servo_3.write(90) 
 	
 Magnet.off()
-	Servo_3write(0)  
+	Servo_3.write(0)  
 
 Void loop() 
 
-Move.arm  (x0,y0 to x1,y1)
+Move.arm  #(x0,y0 to x1,y1)
 
 Magnet.on 
 
-move.arm (x1, y1 to x2, y2)
+move.arm #(x1, y1 to x2, y2)
 
 Magnet.off 
 
 
  ```
           
-</details>
+
  
   
   
@@ -114,7 +113,5 @@ Magnet.off
       - [Aphex Twin Themed SCARA Robot Instructables](https://www.instructables.com/SCARA-Robot-Learning-About-Foward-and-Inverse-Kine/) 
       - [Ball Drop Joystick SCARA Robot](https://create.arduino.cc/projecthub/311549/scara-arm-controlled-by-joystick-486870) 
 
-### Week 1
-[Servo Bracket](https://cvilleschools.onshape.com/documents/575ef6b5b2807b09a30dcc8b/w/4e40a84d3513593e765af328/e/250a50aca4f88581c475a6ac)
-<br/>
-This week I designed the bracket that will hold the servo and prevent the leverage of the arm from breaking the servo. It was fairly simple to do; I just had to look up where the use/project feature was. My goal for next week is to design the first arm.
+
+  
