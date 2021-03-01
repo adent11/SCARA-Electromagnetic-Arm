@@ -9,7 +9,9 @@
  Will be a SCARA type robot arm and will utilise inverse kinematics in order to move in the x and y plane. Inverse kinematics refers to positioning and moving the arm based on calculated joint angles. The arm will be fixed in the y-direction and an electromagnet will be used to lift and sort pieces. The desired positioning values will be entered into the robot via a computer interface. 
       
       
- ### Pseudocode 
+ ### Code 
+  
+ #### Pseudocode 1
  
  ```C++
 
@@ -20,7 +22,7 @@ magnet.pin = n
 Move.arm ()
 	Servoangle.read (ፀx0, ፀy0)
 	Position.read(x1,y1) 
-	Angle.calc (ፀx1, ፀy1)
+	Angle.calc (ፀx1, ፀy1) 
 	Angle.calc (ፀx1-ፀx0, ፀy1-ፀy0) = val 1
 	Servo.move (val 1) 
 	# redo with increasing numbers, save data of initial angle. Ex new ፀx0= old ፀx1
@@ -44,7 +46,59 @@ Magnet.off
 
 
  ```
-     
+ #### Pseudocode 2
+ 
+ ```C++
+
+Void setup()
+
+Servo_x.attach(n).
+
+Servo_Y.attach(n)
+
+Servo_3.attach(n) 
+
+
+Move.arm (2)
+	Servo_x.angleread(ፀx0) 
+	Servo_y.angleread(ፀy0)
+	
+	Position.read(x1,y1) 
+	    potentiometerx.read= x1 
+	    potentiometery.read= y1
+	    LCD.write ('x1', 'y1') 
+	    
+	
+	Angle.calc (ፀx1, ፀy1)
+	# need a grid of some kind to locate positions. Then need a formula to calculate servo angles based on grid positions.  
+	
+	Angle.calc (ፀx1-ፀx0, ፀy1-ፀy0) = val 1x, val 1y
+		val ፀx1-ፀx0 = val 1x
+		val ፀy1-ፀy0 = val 1y
+	Servo_x.move (val 1x)
+	Servo_y.move (val 1y) 
+	# redo with increasing numbers, save data of initial angle. Ex new ፀx0= old ፀx1
+
+
+Magnet.on()
+	Servo_3.write(90) 
+	
+Magnet.off()
+	Servo_3write(0)  
+
+Void loop() 
+
+Move.arm  (x0,y0 to x1,y1)
+
+Magnet.on 
+
+move.arm (x1, y1 to x2, y2)
+
+Magnet.off 
+
+
+ ```
+          
 
  
   
