@@ -11,7 +11,7 @@
       
  ### Code 
   
- #### Pseudocode 1
+<details><summary><b>Pseudocode 1</b></summary>
  
  ```C++
 
@@ -46,7 +46,8 @@ Magnet.off
 
 
  ```
- #### Pseudocode 2
+</details>
+<details><summary><b>Pseudocode 2</b></summary>
  
  ```C++
 
@@ -99,7 +100,7 @@ Magnet.off
 
  ```
           
-
+</details>
  
   
   
@@ -112,6 +113,3 @@ Magnet.off
  - A place to put any potentially useful website links: 
       - [Aphex Twin Themed SCARA Robot Instructables](https://www.instructables.com/SCARA-Robot-Learning-About-Foward-and-Inverse-Kine/) 
       - [Ball Drop Joystick SCARA Robot](https://create.arduino.cc/projecthub/311549/scara-arm-controlled-by-joystick-486870) 
-
-
-  
