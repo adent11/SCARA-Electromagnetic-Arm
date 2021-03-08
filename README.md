@@ -102,8 +102,11 @@ Magnet.off
 
  #### Formula 
  
- Formula for conversion of servo angle into graphing placement
-  
+ Kinematics formulas for x,y to servo angle conversions: 
+ 
+ First servo angle: q1= tan^-1 y/x - tan^-1 (a2*sinq2)/(a1 + a2*cosq2) 
+ 
+ Second servo angle: q2= cos^-1 (x^2 + y^2 - a1^2 - a2^2) / (2a1*a2)
   
 ### OnShape "Pseudocode"
 
