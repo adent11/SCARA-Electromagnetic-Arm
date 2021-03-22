@@ -136,6 +136,9 @@ This week I designed the bracket that will hold the servo and prevent the levera
  
 ### Week 2 
 #### CAD (Alden)
+<IMG SRC="Media/FirstArm.PNG" width="250" height="138"> <br/>
+[First Arm](https://cvilleschools.onshape.com/documents/575ef6b5b2807b09a30dcc8b/w/4e40a84d3513593e765af328/e/6c75b69a643d8fb6d7615803)
+<br/>
 This week I designed the first arm by creating the end that connects to the servo and bracket and adding another servo/bracket combination at the other end for the second arm to be attached to. Something useful that I learned is that when you are editing a part in a context inside of an assembly then add something new to the assembly, if you want to use geometry from the thing you just added you need to create a new context to edit the part in.
 
 #### Code (Georgia): 
