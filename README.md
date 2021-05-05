@@ -125,13 +125,13 @@ Magnet.off
 
 
 ### Week 1
-#### CAD (Alden):
+#### CAD (Alden)
 <IMG SRC="Media/ServoBracket.PNG" width="250" height="202"> <br/>
 [Servo Bracket](https://cvilleschools.onshape.com/documents/575ef6b5b2807b09a30dcc8b/w/4e40a84d3513593e765af328/e/250a50aca4f88581c475a6ac)
 <br/>
 This week I designed the bracket that will hold the servo and prevent the leverage of the arm from breaking the servo. It was fairly simple to do; I just had to look up where the use/project feature was. My goal for next week is to design the first arm.
 
-#### Code (Georgia): 
+#### Code (Georgia)
  This week I created a second version of the pseudocode with further specifications (Pseudocode 2). While working on this, I realized that in order to progress further with creating the code I would have to find a working formula for the kinematics of the arm (converting x,y grid coordinates into servo angles) so that's my goal for week two. 
  
 ### Week 2 
@@ -141,7 +141,7 @@ This week I designed the bracket that will hold the servo and prevent the levera
 <br/>
 This week I designed the first arm by creating the end that connects to the servo and bracket and adding another servo/bracket combination at the other end for the second arm to be attached to. Something useful that I learned is that when you are editing a part in a context inside of an assembly then add something new to the assembly, if you want to use geometry from the thing you just added you need to create a new context to edit the part in.
 
-#### Code (Georgia): 
+#### Code (Georgia)
 For week two I completed my goal of finding an appropriate kinematics formula for the code conversion of grid coordinates into servo angles. The formula was much more complicated then I had expected and requires arm lengths for specifics, we don't have that information yet but will add it later once CAD is complete. 
 
 ### Week 3
@@ -153,3 +153,15 @@ This week I added bolts to everything and designed the part of the second arm th
 
 #### Code (Georgia) 
 This week I worked on the beginning of the code starting with creating a basic method for two servos to turn, without the involevement of kinematics. The goal for the next week is to incorporate kinematics into the code in order to adjust servo angles based on desired grid coordinates. 
+
+### Week 4
+#### CAD (Alden)
+This week I continued working on the second arm by adding a cylinder for the magnets to slide up and down, which will make their pull stronger and weaker as they get closer and farther from the screws or whatever the arm is picking up.
+
+### Week 5
+This week I attached a servo to the second arm and designed a spool for the string that will attach to the magnets to raise and lower them. I had to move this servo from the bottom to the side of the arm in order to make the arm shorter, which both decreases the leverage, and makes both arms the same length, which makes the inverse kinematic calculations much simpler.
+
+### Week 6
+This week I created the box that will house the Metro M0 Express and other electrical components. I used corner brackets to join the walls to each other since the only part visible on the outside is the heads of a few bolts.
+
+### Week 7
