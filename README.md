@@ -207,7 +207,7 @@ We were not able to finish the project; here is what we have done and what went 
 ### Final Product
 By the end of the year I finished all of the CAD and fulfilled all of the goals set at the beginning of the project. Using two servo joints, the arm is able to reach anywhere within the radius of the length of the arm fully extended. (about 8 inches)
 The first joint allows it to move like this, pointing towards any direction.
-
+<IMG SRC="Media/1stJointGif.PNG" width="300" height="208"> <br/>
 The second joint allows the length of the arm to be changed so it can reach any distance within the full extension and the limit of how acute the angle between the first and second arms can become.
 
 In combination, these allow the end of the arm to move to any point between the radius of the arm fully extended and the radius of the arm fully bent.
