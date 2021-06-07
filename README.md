@@ -199,3 +199,15 @@ This week I added the LCD screen, potentiometers, and Metro M0 Express to the bo
 #### CAD (Alden)
 <IMG SRC="Media/Week11CAD.PNG" width="250" height="196"> <br/>
 This week I had to make a bunch of small, but time consuming changes in CAD. I moved the spool servo to the top of the second arm since the spool wouldn't have worked where it was before because it was perpendicular to the direction the string had to be facing, which would have meant it wouldn't spool. A bunch of small changes like this that aren't as easy to see in CAD have prevented me from fabricating, despite the assembly appearing as though it is done.
+
+## Project Obituary
+We were not able to finish the project; here is what we have done and what went wrong.
+
+### CAD (Alden)
+### Final Product
+By the end of the year I finished all of the CAD and fulfilled all of the goals set at the beginning of the project. Using two servo joints, the arm is able to reach anywhere within the radius of the length of the arm fully extended. (about 8 inches)
+The first joint allows it to move like this, pointing towards any direction.
+
+The second joint allows the length of the arm to be changed so it can reach any distance within the full extension and the limit of how acute the angle between the first and second arms can become.
+
+In combination, these allow the end of the arm to move to any point between the radius of the arm fully extended and the radius of the arm fully bent.
