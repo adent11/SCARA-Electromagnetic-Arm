@@ -1,6 +1,7 @@
 # SCARA Electromagnetic Arm 
 
-## Plan 
+<details><summary><b>Pre-Project Planning</b></summary>
+<p>
   
   ### Goal
   To build a robotic arm that will be able to electromagnetically move and sort metal pieces to precise locations.
@@ -123,6 +124,8 @@ Magnet.off
       - [Ball Drop Joystick SCARA Robot](https://create.arduino.cc/projecthub/311549/scara-arm-controlled-by-joystick-486870) 
       - [Kinematics Formula Walkthrough Video](https://robotacademy.net.au/lesson/inverse-kinematics-for-a-2-joint-robot-arm-using-geometry/)
 
+</p>
+</details>
 
 ### Week 1
 #### CAD (Alden)
