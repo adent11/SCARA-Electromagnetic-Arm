@@ -184,5 +184,5 @@ This week I added tabs on the bottom of the first arm to attach it to the base a
 
 ### Week 9
 #### CAD (Alden)
-<IMG SRC="Media/Week8CAD.PNG" width="250" height="156"> <br/>
+<IMG SRC="Media/Week9CAD.PNG" width="250" height="156"> <br/>
 This week I added tabs to the bottom of the first part of the arm and attached it to the base. I also spent a while changing many dimensions and updating contexts across assemblies so everything matched together. I had to make the arms thinner since they were unnecessarily thick and would have used a lot of plastic. I changed the size of many of the bolt holes since I had been making them too wide.
