@@ -164,16 +164,23 @@ This week I continued working on the second arm by adding a cylinder for the mag
 
 ### Week 5
 #### CAD (Alden)
-This week I attached a servo to the second arm and designed a spool for the string that will attach to the magnets to raise and lower them. I had to move this servo from the bottom to the side of the arm in order to make the arm shorter, which both decreases the leverage, and makes both arms the same length, which will make the inverse kinematic calculations much simpler.
+<IMG SRC="Media/Week5CAD.PNG" width="250" height="195"> <br/>
+This week I designed a spool for the string and attached it to the servo on the second arm. I also shortened the second arm since this will decrease the leverage and thus make the arm stronger.
 
 ### Week 6
 #### CAD (Alden)
-This week I created the box that will house the Metro M0 Express and other electrical components. I used corner brackets to join the walls to each other since the only part visible on the outside is the heads of a few bolts.
+<IMG SRC="Media/Week6CAD.PNG" width="250" height="195"> <br/>
+This week I shortened the second arm even more so the length of the two arms is the same (from servo to servo and servo to end). This will make the inverse kinematic calculations much simpler since the angle of the second servo will determine the functional length of the arm and the first servo will determine where it is pointing. In order to do this, I had to move the servo to the side of the arm since it didn't fit where it was before. I also rounded the ends of the arms, partially to save material, but also because it looks much better.
 
 ### Week 7
 #### CAD (Alden)
-This week I added tabs on the bottom of the first arm to attach it to the base and put bolts through to hold them together. I also rounded the arms so they can be shorter and the corners won't catch when they rotate.
+<IMG SRC="Media/Week7CAD.PNG" width="250" height="195"> <br/>
+This week I created the box that will house the Metro M0 Express and other electrical components. I used corner brackets to join the walls to each other since the only part visible on the outside is the heads of a few bolts.
 
 ### Week 8
+#### CAD (Alden)
+This week I added tabs on the bottom of the first arm to attach it to the base and put bolts through to hold them together. I also rounded the arms so they can be shorter and the corners won't catch when they rotate.
+
+### Week 9
 #### CAD (Alden)
 This week I didn't make much progress since I had to change many dimensions and update contexts across many assemblies so everything matched together. I had to make the arms thinner since they were unnecessarily thick and would have used a lot of plastic. I also had to change the size of many of the bolt holes since I had been making them too wide.
