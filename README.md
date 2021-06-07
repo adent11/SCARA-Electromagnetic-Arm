@@ -194,3 +194,8 @@ This week I added tabs to the bottom of the first part of the arm and attached i
 #### CAD (Alden)
 <IMG SRC="Media/Week10CAD.PNG" width="250" height="151"> <br/>
 This week I added the LCD screen, potentiometers, and Metro M0 Express to the box and created the necessary holes to attach them. I also added bolts to the CAD, which is only aesthetic, but shows how everything will attach.
+	
+### Week 11
+#### CAD (Alden)
+<IMG SRC="Media/Week11CAD.PNG" width="250" height="151"> <br/>
+This week I had to make a bunch of small, but time consuming changes in CAD. I moved the spool servo to the top of the second arm since the spool wouldn't have worked where it was before because it was perpendicular to the direction the string had to be facing, which would have meant it wouldn't spool. A bunch of small changes like this that aren't as easy to see in CAD have prevented me from fabricating, despite the assembly appearing as though it is done.
