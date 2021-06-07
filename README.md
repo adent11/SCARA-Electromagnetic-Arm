@@ -197,5 +197,5 @@ This week I added the LCD screen, potentiometers, and Metro M0 Express to the bo
 	
 ### Week 11
 #### CAD (Alden)
-<IMG SRC="Media/Week11CAD.PNG" width="250" height="151"> <br/>
+<IMG SRC="Media/Week11CAD.PNG" width="250" height="196"> <br/>
 This week I had to make a bunch of small, but time consuming changes in CAD. I moved the spool servo to the top of the second arm since the spool wouldn't have worked where it was before because it was perpendicular to the direction the string had to be facing, which would have meant it wouldn't spool. A bunch of small changes like this that aren't as easy to see in CAD have prevented me from fabricating, despite the assembly appearing as though it is done.
