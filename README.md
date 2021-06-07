@@ -164,17 +164,17 @@ This week I continued working on the second arm by adding a cylinder for the mag
 
 ### Week 5
 #### CAD (Alden)
-<IMG SRC="Media/Week5CAD.PNG" width="250" height="195"> <br/>
+<IMG SRC="Media/Week5CAD.PNG" width="250" height="217"> <br/>
 This week I designed a spool for the string and attached it to the servo on the second arm. I also shortened the second arm since this will decrease the leverage and thus make the arm stronger.
 
 ### Week 6
 #### CAD (Alden)
-<IMG SRC="Media/Week6CAD.PNG" width="250" height="195"> <br/>
+<IMG SRC="Media/Week6CAD.PNG" width="250" height="209.5"> <br/>
 This week I shortened the second arm even more so the length of the two arms is the same (from servo to servo and servo to end). This will make the inverse kinematic calculations much simpler since the angle of the second servo will determine the functional length of the arm and the first servo will determine where it is pointing. In order to do this, I had to move the servo to the side of the arm since it didn't fit where it was before. I also rounded the ends of the arms, partially to save material, but also because it looks much better.
 
 ### Week 7
 #### CAD (Alden)
-<IMG SRC="Media/Week7CAD.PNG" width="250" height="195"> <br/>
+<IMG SRC="Media/Week7CAD.PNG" width="250" height="161"> <br/>
 This week I created the box that will house the Metro M0 Express and other electrical components. I used corner brackets to join the walls to each other since the only part visible on the outside is the heads of a few bolts. (Two walls are hidden in this screenshot to show the brackets)
 
 ### Week 8
