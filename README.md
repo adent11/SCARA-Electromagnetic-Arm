@@ -175,7 +175,7 @@ This week I shortened the second arm even more so the length of the two arms is 
 ### Week 7
 #### CAD (Alden)
 <IMG SRC="Media/Week7CAD.PNG" width="250" height="195"> <br/>
-This week I created the box that will house the Metro M0 Express and other electrical components. I used corner brackets to join the walls to each other since the only part visible on the outside is the heads of a few bolts.
+This week I created the box that will house the Metro M0 Express and other electrical components. I used corner brackets to join the walls to each other since the only part visible on the outside is the heads of a few bolts. (Two walls are hidden in this screenshot to show the brackets)
 
 ### Week 8
 #### CAD (Alden)
