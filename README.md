@@ -156,7 +156,7 @@ This week I worked on the beginning of the code starting with creating a basic m
 
 ### Week 4
 #### CAD (Alden)
-This week I continued working on the second arm by adding a cylinder for the magnets to slide up and down, which will make their attraction stronger and weaker as they get closer and farther from the screws or whatever the arm is picking up.
+This week I continued working on the second arm by adding a cylinder for the magnets to slide up and down, which will make their attraction stronger and weaker as they get closer and farther from the screws or whatever the arm is picking up. I also added a servo that will wind and unwind the string which will raise and lower the attached magnet inside the cylinder.
 
 #### Code (Georgia)
 
