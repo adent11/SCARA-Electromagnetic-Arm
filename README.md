@@ -183,4 +183,4 @@ This week I added tabs on the bottom of the first arm to attach it to the base a
 
 ### Week 9
 #### CAD (Alden)
-This week I didn't make much progress since I had to change many dimensions and update contexts across many assemblies so everything matched together. I had to make the arms thinner since they were unnecessarily thick and would have used a lot of plastic. I also had to change the size of many of the bolt holes since I had been making them too wide.
+This week I added tabs to the bottom of the first part of the arm and attached it to the base. I also spent a while changing many dimensions and updating contexts across assemblies so everything matched together. I had to make the arms thinner since they were unnecessarily thick and would have used a lot of plastic. I changed the size of many of the bolt holes since I had been making them too wide.
