@@ -192,5 +192,5 @@ This week I added tabs to the bottom of the first part of the arm and attached i
 	
 ### Week 10
 #### CAD (Alden)
-<IMG SRC="Media/Week10CAD.PNG" width="250" height="156"> <br/>
+<IMG SRC="Media/Week10CAD.PNG" width="250" height="151"> <br/>
 This week I added the LCD screen, potentiometers, and Metro M0 Express to the box and created the necessary holes to attach them. I also added bolts to the CAD, which is only aesthetic, but shows how everything will attach.
