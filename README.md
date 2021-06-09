@@ -98,7 +98,12 @@ move.arm #(x1, y1 to x2, y2)
 
 Magnet.off 
 
+```
 	
+</details>
+<details><summary>Test Code 1</summary>	
+	
+ ```C++
 
 # Continuous Servo Test Program for CircuitPython
 #import time
@@ -150,7 +155,7 @@ Magnet.off
 
 
  ```
-	- Above is the most recent version of the code. There are two main issues with this, the first being that it is using continuous servo code for non continuous servos. This means that the servos will move, but, since they are meant to be controlled by angle and not by speed, will not respond correctly. However, due to errors with the pwmio module on my computer, I'm not sure how to use the PWMio control meant for these servos. The other issue with this is that it uses a button as opposed to a potentiometer (buttons are the only control switches I have) which makes for less accurate angle control. This issue should be easy to solve by switching over to a potentiometer once in the lab tommorow. This code also does not use kinematics, but considering the problems with even getting PWM libraries to run, my main goal is just to create a basic version of this code where servos can be controlled by angle with a potentiometer to manually guide the robotic arm. 
+Above is the most recent version of the code. There are two main issues with this, the first being that it is using continuous servo code for non continuous servos. This means that the servos will move, but, since they are meant to be controlled by angle and not by speed, will not respond correctly. However, due to errors with the pwmio module on my computer, I'm not sure how to use the PWMio control meant for these servos. The other issue with this is that it uses a button as opposed to a potentiometer (buttons are the only control switches I have) which makes for less accurate angle control. This issue should be easy to solve by switching over to a potentiometer once in the lab tommorow. This code also does not use kinematics, but considering the problems with even getting PWM libraries to run, my main goal is just to create a basic version of this code where servos can be controlled by angle with a potentiometer to manually guide the robotic arm. 
 	
 	
 </details>
