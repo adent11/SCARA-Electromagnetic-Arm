@@ -1,6 +1,6 @@
 # SCARA Electromagnetic Arm 
 
-<details><summary><b>Pre-Project Planning</b></summary>
+<summary><b>Pre-Project Planning</b></summary>
 <p>
   
   ### Goal
@@ -12,7 +12,7 @@
       
  ### Code 
   
- #### Pseudocode 1
+<details><summary>Pseudocode 1</summary>
  
  ```C++
 
@@ -47,7 +47,8 @@ Magnet.off
 
 
  ```
- #### Pseudocode 2
+</details>
+<details><summary>Pseudocode 2</summary>
  
  ```C++
 
@@ -99,9 +100,10 @@ Magnet.off
 
 
  ```
-          
-
- #### Formula 
+</details>
+	
+ ### Inverse Kinematic Math
+ We plan to use inverse kinematics, which means that we will input the desired location of the end of the arm in x and y coordinates, and it will calculate what angle the first and second arm should be at to put the end at that given point. Here is some of the math necessary to calculate the servo angles.
  
  Kinematics formulas for x,y to servo angle conversions: 
  
@@ -119,13 +121,12 @@ Magnet.off
 [OnShape VERY Rough Prototype](https://cvilleschools.onshape.com/documents/0627f950d927ef87b77603c8/w/3575573e58b9fedf54dfd438/e/1fe431af62f1e4169310c066)
 
 ### Web Links
- - A place to put any potentially useful website links: 
+ - Here are some websites with valuable information: 
       - [Aphex Twin Themed SCARA Robot Instructables](https://www.instructables.com/SCARA-Robot-Learning-About-Foward-and-Inverse-Kine/) 
       - [Ball Drop Joystick SCARA Robot](https://create.arduino.cc/projecthub/311549/scara-arm-controlled-by-joystick-486870) 
       - [Kinematics Formula Walkthrough Video](https://robotacademy.net.au/lesson/inverse-kinematics-for-a-2-joint-robot-arm-using-geometry/)
 
 </p>
-</details>
 
 ### Week 1
 #### CAD (Alden)
