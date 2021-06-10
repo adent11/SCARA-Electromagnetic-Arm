@@ -162,7 +162,8 @@ Above is the most recent version of the code. There are two main issues with thi
 </details>
 
 <details><summary>Final Code</summary>	
-	
+
+ ```C++
 	"""CircuitPython Essentials Servo standard servo example"""
 import time
 import board
@@ -210,9 +211,10 @@ while True:
         my_servo2.angle = y
        # print((y))
         time.sleep(0.0)
-      </details>
 
-
+ ```
+	
+</details>
 	
  ### Inverse Kinematic Math
  We plan to use inverse kinematics, which means that we will input the desired location of the end of the arm in x and y coordinates, and it will calculate what angle the first and second arm should be at to put the end at that given point. Here is some of the math necessary to calculate the servo angles.
