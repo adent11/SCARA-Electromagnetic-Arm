@@ -105,53 +105,53 @@ Magnet.off
 	
  ```C++
 
-# Continuous Servo Test Program for CircuitPython
-#import time
-#import board
-#import pulseio
-#from adafruit_motor import servo
-#from digitalio import DigitalInOut, Direction, Pull
+#Continuous Servo Test Program for CircuitPython
+import time
+import board
+import pulseio
+from adafruit_motor import servo
+from digitalio import DigitalInOut, Direction, Pull
  
 # create a PWMOut object on Pin A2.
-#pwm1 = pulseio.PWMOut(board.A2, frequency=50)
-#pwm2 = pulseio.PWMOut(board.A3, frequency=50)
+pwm1 = pulseio.PWMOut(board.A2, frequency=50)
+pwm2 = pulseio.PWMOut(board.A3, frequency=50)
  
 # Create a servo object, my_servo.
-#my_servo1 = servo.ContinuousServo(pwm1)
-#my_servo2 = servo.ContinuousServo(pwm2)
+my_servo1 = servo.ContinuousServo(pwm1)
+my_servo2 = servo.ContinuousServo(pwm2)
 
 
-#btn = DigitalInOut(board.D2)
-#btn.direction = Direction.INPUT
-#btn.pull = Pull.UP
+btn = DigitalInOut(board.D2)
+btn.direction = Direction.INPUT
+btn.pull = Pull.UP
 
 
-#while True:
+while True:
     
-    #if not btn.value:
-       #print("on")
-       #my_servo1.angle = 180
-       #my_servo2.angle = 180
+    if not btn.value:
+       print("on")
+       my_servo1.angle = 180
+       my_servo2.angle = 180
       
         
-   # else:
-       #print("off")
-       #my_servo1.angle = 0
-       #my_servo2.angle = 0
+   else:
+       print("off")
+       my_servo1.angle = 0
+       my_servo2.angle = 0
        
-       #pass
+       pass
 
-   # time.sleep(0.1) # sleep for debounce
+    time.sleep(0.1) # sleep for debounce
   
-   # time.sleep(2.0)
-   # print("reverse")
-   # my_servo1.throttle = -1.0
-   # my_servo2.throttle = -1.0
-   # time.sleep(2.0)
-   # print("stop")
-   # my_servo1.throttle = 0.0
-   # my_servo2.throttle = 0.0
-   # time.sleep(4.0)
+    time.sleep(2.0)
+    print("reverse")
+    my_servo1.throttle = -1.0
+    my_servo2.throttle = -1.0
+    time.sleep(2.0)
+    print("stop")
+    my_servo1.throttle = 0.0
+    my_servo2.throttle = 0.0
+    time.sleep(4.0)
 
 
  ```
