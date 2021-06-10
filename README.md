@@ -101,6 +101,7 @@ Magnet.off
 ```
 	
 </details>
+	
 <details><summary>Test Code 1</summary>	
 	
  ```C++
@@ -159,6 +160,59 @@ Above is the most recent version of the code. There are two main issues with thi
 	
 	
 </details>
+
+<details><summary>Final Code</summary>	
+	
+	"""CircuitPython Essentials Servo standard servo example"""
+import time
+import board
+import pulseio
+from adafruit_motor import servo
+from analogio import AnalogIn
+
+
+# create a PWMOut object on Pin A2.
+pwm1 = pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+pwm2 = pulseio.PWMOut(board.A3, duty_cycle=2 ** 15, frequency=50)
+pwm3 = pulseio.PWMOut(board.A4, frequency=50)
+
+# Create a servo object, my_servo.
+my_servo1 = servo.Servo(pwm1)
+my_servo2 = servo.Servo(pwm2)
+my_servo3 = servo.ContinuousServo(pwm3)
+
+
+
+potentiometer1 = AnalogIn(board.A1)
+potentiometer2 = AnalogIn(board.A0)
+potentiometer3 = AnalogIn(board.A5)
+    
+
+while True:
+    
+    x= potentiometer1.value/400 + 13
+    y= potentiometer2.value/400 + 13
+    z= potentiometer3.value/100000 + .3
+    
+    my_servo3.throttle= z
+    print ((z))
+    
+    
+    for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
+    
+        my_servo1.angle = x
+        my_servo2.angle = y
+        # print((x))
+        time.sleep(0.0)
+        
+    for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
+        my_servo1.angle = x
+        my_servo2.angle = y
+       # print((y))
+        time.sleep(0.0)
+      </details>
+
+
 	
  ### Inverse Kinematic Math
  We plan to use inverse kinematics, which means that we will input the desired location of the end of the arm in x and y coordinates, and it will calculate what angle the first and second arm should be at to put the end at that given point. Here is some of the math necessary to calculate the servo angles.
