@@ -340,4 +340,4 @@ The second joint allows the length of the arm to be changed so it can reach any 
 <br/> <IMG SRC="Media/2ndJointGif.gif" width="300" height="169"> <br/>
 In combination, these allow the end of the arm to move to any point between the radius of the arm fully extended and the radius of the arm fully bent.<br/>
 Here is a picture of the final iteration of the 3d design for the arm.
-<br/> <IMG SRC="Media/FinalCAD.PNG" width="300" height="209"> <br/>
+<br/> <IMG SRC="Media/FinalCAD.png" width="300" height="209"> <br/>
