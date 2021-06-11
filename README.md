@@ -10,17 +10,17 @@
  Will be a SCARA type robot arm and will utilise inverse kinematics in order to move in the x and y plane. Inverse kinematics refers to positioning and moving the arm based on calculated joint angles. The arm will be fixed in the y-direction and an electromagnet will be used to lift and sort pieces. The desired positioning values will be entered into the robot via a computer interface. 
       
   ### Materials
-	* 1 Metro M0 Express
-	* 1 LCD Screen
-	* 2 Panel Mount Potentiometers
-	* 1 Panel Mount Switch
-	* 2 Continous Servos
-	* 1 Continous Micro-Servo
-	* 3D Printed Arm
-	* Laser Cut Acrylic Box
-	* 3D Printed Joint Brackets
-	* Various 4-40 Bolts
-	* 4-40 Nuts
+  * 1 Metro M0 Express
+  * 1 LCD Screen
+  * 2 Panel Mount Potentiometers
+  * 1 Panel Mount Switch
+  * 2 Continous Servos
+  * 1 Continous Micro-Servo
+  * 3D Printed Arm
+  * Laser Cut Acrylic Box
+  * 3D Printed Joint Brackets
+  * Various 4-40 Bolts
+  * 4-40 Nuts
   
  ### Code 
   
@@ -332,9 +332,10 @@ We were not able to finish the project; here is what we have done and what went 
 
 ### CAD (Alden)
 ### Final Product
-By the end of the year I finished all of the CAD and fulfilled all of the goals set at the beginning of the project. Using two servo joints, the arm is able to reach anywhere within the radius of the length of the arm fully extended. (about 8 inches) <br/>
-The first joint allows it to move like this, pointing towards any direction.
+By the end of the year I finished all of the CAD and fulfilled all of the goals set at the beginning of the project. Using two servo joints, the arm is able to reach anywhere within the radius of the length of the arm fully extended. (about 8 inches) The movement would be controlled by two potentiometers which could be used to input either the desired x and y coordinates, or desired angles of each servo, depending on the type of movement programmed at the time. The switch controls a servo on the second arm, which raises or lowers a magnet atttached by a string that is in the cylinder extending from the end. This would increase or decrease the distance of the magnet from the surface, changing the magnetic attraction, and allowing the arm to pick up or drop magnetic pieces, like nuts or bolts. <br/>
+The first joint allows it to move like this, pointing in any direction.
 <br/> <IMG SRC="Media/1stJointGif.gif" width="300" height="208"> <br/>
 The second joint allows the length of the arm to be changed so it can reach any distance within the full extension and the limit of how acute the angle between the first and second arms can become.
 <br/> <IMG SRC="Media/2ndJointGif.gif" width="300" height="169"> <br/>
 In combination, these allow the end of the arm to move to any point between the radius of the arm fully extended and the radius of the arm fully bent.
+
