@@ -1,6 +1,6 @@
 # SCARA Electromagnetic Arm 
 
-<summary><b>Pre-Project Planning</b></summary>
+## Pre-Project Planning
 <p>
   
   ### Goal
@@ -9,7 +9,19 @@
   ### Specifics
  Will be a SCARA type robot arm and will utilise inverse kinematics in order to move in the x and y plane. Inverse kinematics refers to positioning and moving the arm based on calculated joint angles. The arm will be fixed in the y-direction and an electromagnet will be used to lift and sort pieces. The desired positioning values will be entered into the robot via a computer interface. 
       
-      
+  ### Materials
+	* 1 Metro M0 Express
+	* 1 LCD Screen
+	* 2 Panel Mount Potentiometers
+	* 1 Panel Mount Switch
+	* 2 Continous Servos
+	* 1 Continous Micro-Servo
+	* 3D Printed Arm
+	* Laser Cut Acrylic Box
+	* 3D Printed Joint Brackets
+	* Various 4-40 Bolts
+	* 4-40 Nuts
+  
  ### Code 
   
 <details><summary>Pseudocode 1</summary>
@@ -324,5 +336,5 @@ By the end of the year I finished all of the CAD and fulfilled all of the goals 
 The first joint allows it to move like this, pointing towards any direction.
 <br/> <IMG SRC="Media/1stJointGif.gif" width="300" height="208"> <br/>
 The second joint allows the length of the arm to be changed so it can reach any distance within the full extension and the limit of how acute the angle between the first and second arms can become.
-
+<br/> <IMG SRC="Media/2ndJointGif.gif" width="300" height="169"> <br/>
 In combination, these allow the end of the arm to move to any point between the radius of the arm fully extended and the radius of the arm fully bent.
