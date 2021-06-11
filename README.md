@@ -332,7 +332,7 @@ This week I had to make a bunch of small, but time consuming changes in CAD. I m
 We were not able to finish the project; here is what we have done and what went wrong.
 
 ### CAD (Alden)
-### Final Product
+#### Final Product
 By the end of the year I finished all of the CAD and fulfilled all of the goals set at the beginning of the project. Using two servo joints, the arm is able to reach anywhere within the radius of the length of the arm fully extended. (about 8 inches) The movement would be controlled by two potentiometers which could be used to input either the desired x and y coordinates, or desired angles of each servo, depending on the type of movement programmed at the time. These positional values would then be displayed on the LCD screen. The switch controls a servo on the second arm, which raises or lowers a magnet atttached by a string that is in the cylinder extending from the end. This would increase or decrease the distance of the magnet from the surface, changing the magnetic attraction, and allowing the arm to pick up or drop magnetic pieces, like nuts or bolts. <br/>
 The first joint allows it to move like this, pointing in any direction.
 <br/> <IMG SRC="Media/1stJointGif.gif" width="300" height="208"> <br/>
@@ -342,8 +342,10 @@ In combination, these allow the end of the arm to move to any point between the 
 Here is a picture of the final iteration of the 3d design for the arm.
 <br/> <IMG SRC="Media/FinalCAD.png" width="300" height="209"> <br/>
 
-### Why Didn't I Finish
+#### Why Didn't I Finish
 Numerous factors, some in my control, some out of my control, led to my inability to finish building the arm on time. The fact that roughly 3/4 of the time I spent working on the project was at home rather than in school created several challenges. Since many of the materials used in the CAD model weren't availible to me when I was making the arm, it was hard to get a sense of the scale of the arm. This also meant that it was harder to get a sense for how the different parts would interact. Also, I didn't have the specific dimensions for many of the holes for bolts and other components. All of these led to having to fix many small, hard to find problems, which took a lot of the time once I returned to school.
 
-### What Could I Have Done Better
+#### What Could I Have Done Better
 If I were to go back and do this project again, there are a few aspects of my method that I would change to mitigate some of the delaying factors listed above. One thing that would have been helpful would be asking for more help with specific dimensions and review of design, which could have prevented having to make as many changes after the initial design. The other main area that I could have improved in would have been motivation in working on the project at home. Given the completely online format of school for most of the project, I found it hard to make myself work on the design, so more strict scheduling could have helped force progress. In hindsight, there were also areas of my design process in Onshape that could have been better in terms of use of project studios and context editing. The greatest design challenge was creating the servo brackets, so that is what I would reccomend focusing on if another group were to try to do a similar project.
+	
+### Code (Georgia)
