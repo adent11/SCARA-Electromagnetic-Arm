@@ -329,6 +329,7 @@ One of the main goals for the code of this project was to use kinematics in orde
 
 
 <details><summary>Final Code</summary>	
+	
  ```C++
 	
 import time
@@ -383,6 +384,7 @@ while True:
         time.sleep(0.0) # sleep time can be changed if necessary for pauses/reset
 
  ```
+	
 </details>
 	
 ### Issues 
