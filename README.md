@@ -325,6 +325,66 @@ We were not able to finish the project; here is what we have done and what went 
 ### Final Product
 One of the main goals for the code of this project was to use kinematics in order to make the servos move in sync, reading angles and then adjusting based on input coordinates but this was not accomplished. The final product used potentiometers to adjust three servos, two of which were standard servos meant to make up the arm, and a third which was continuous in order to serve as the pulley system for the magnet. The potentiometer for the first two servos adjusted their angles directly and the third adjusted the throttle of the continuous servo. The wiring and code for this setup was completed, but it was not uploaded to a prototyping shield or added to the CAD arm structure. Below are photos and videos of the final setup as well as an annotated copy of the final code. 
 
+	
+
+
+<details><summary>Final Code</summary>	
+ ```C++
+	
+import time
+import board
+import pulseio
+from adafruit_motor import servo # Import file for servo control
+from analogio import AnalogIn # Import file for continuous servo control 
+
+
+# create PWMOut objects on Pin A2, A3, A4.
+pwm1 = pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50) 
+pwm2 = pulseio.PWMOut(board.A3, duty_cycle=2 ** 15, frequency=50)
+pwm3 = pulseio.PWMOut(board.A4, frequency=50)
+
+# Create servo objects, my_servo1, my_servo2, my_servo3.
+my_servo1 = servo.Servo(pwm1)
+my_servo2 = servo.Servo(pwm2)
+my_servo3 = servo.ContinuousServo(pwm3)
+
+
+# Potentiometers on Analog Pins A1, A0, A5.
+potentiometer1 = AnalogIn(board.A1)
+potentiometer2 = AnalogIn(board.A0)
+potentiometer3 = AnalogIn(board.A5)
+    
+
+while True:
+    # Variables converting potentiometer values to servo angles/throttle value
+    x= potentiometer1.value/400 + 13 
+    y= potentiometer2.value/400 + 13
+    z= potentiometer3.value/100000 + .3
+    
+    # Set continuous servo throttle to z
+    my_servo3.throttle= z
+    print ((z))
+    
+    # Set servo1 and servo2 angles to x and y. 
+	
+    # For angle in range is left over from continuous servo code, still functions (better) than without it. 
+
+    for angle in range(0, 180, 5):  
+	
+        my_servo1.angle = x
+        my_servo2.angle = y
+        print((x))
+        time.sleep(0.0)
+        
+    for angle in range(180, 0, -5): 
+        my_servo1.angle = x
+        my_servo2.angle = y
+        print((y))
+        time.sleep(0.0) # sleep time can be changed if necessary for pauses/reset
+
+ ```
+</details>
+	
 ### Issues 
 The code and wiring of this product was functioning, but it did not meet the goals set at the beginning of the project, so heres an anthology of everything that went wrong: 
 	
@@ -346,8 +406,23 @@ An additional issue that I encountered in the midst of changing and reuploading 
 I had initially planned to use a button to control the continuous servo for the pulley system. However, when I tried to add a button to my wiring, I found that whenever I pressed to button my arduino, although securly attached by USB, would be breifly ejected from my computer. This issue was truly bizarre because there was nithing in my code or wiring for the button that would connect it to the USB system of the computer. I resolved it by switching from using a button to a potentiometer. 
 	
 #### USB 
-Though removing the button resolved the issue of the arduino being rejected from the comput
+Though removing the button resolved the issue of the arduino being rejected from the computer, the connection was still slightly unstable and would cause errors stating that the arduino was experiencing dips in power. After switching through a coupld different USB cords, I decided that it was most likely an issue with my chromebook, so I switched to using one of the computers in the Sigma Lab, which resolved the issue. 
 	
+
+#### Interference 
+Once the code was running and the wiring was complete, there was a problem where the two standard servos would twitch randomly or change angles before self-adjusting when the potentiometers of the other servos were adjusted. This error can be seen in the video of the final product linked above. In C++, similar issues would have been solved with servo.detach functions so that servos would not move when not in use. However, servo.detach functions do not exist in CircuitPython and there are no similar functions available. The best way to solve this problem would most likley have been by adding transistors to the circuit, one connected to each servo, and then adding functions deconnecting the transistors- thus deconnecting the servos- and times when the servos would not be in use. However this solution could not be implemented due to lack of time. 
+	
+### TL;DR
+ - Continuous servos require continuous servo code and standard servos require standard servo code; these don't work well when switched. 
+ - The lack of frequently updated instructional pages for CircuitPython means that all information and code obtained online should be taken with an extra grain of salt,   CHECK DATES, use multiple sources, etc. 
+ - If you encounter an issue with your libraries, and you have the most recent and stable version downloaded, then the issue is likely with the way your code is  	    referencing the libraries and not the content of the libraries themselves.
+- For recent versions of CircuitPython use 'pulseio' for servo control as opposed to 'pwmio'.
+- Replacing .mpy files with their .py equivalents (NOT JUST CHANGING THE FILE NAMES) solves .mpy update issues. 
+- Buttons may cause issues with USB connections somehow, switch buttons out for other control devices (i.e. potentiometers) if this happens. 
+- Power dips experienced by the arduino can be resolved by switching computers or potentially by switching USB cables. 
+- Interference between servos cannot be solved by servo.detach functions in CircuitPython. Using transistors and coding for them to deconnect when needed is a potential solution. 
+### Future Improvements
+If there had been more time for this project, the first thing I would address would be the interference issue with the servos, which I would fix using transistors as described above. Next I would have tried to implement kinematics functions in order to control the servos through computer input. How I would do this is briefly described here: 
 	
 ### CAD (Alden)
 ### Final Product
