@@ -399,7 +399,12 @@ while True:
 </details>
 	
 #### Wiring
-	<IMG SRC="Media/.PNG" width="250" height="151"> <br/>
+
+[Continuous Servo Video](https://github.com/adent11/SCARA-Electromagnetic-Arm/blob/main/Media/ContinuousServoVideo.mov)
+	
+[Standard Servo Video](https://github.com/adent11/SCARA-Electromagnetic-Arm/blob/main/Media/StandardServo.mov)
+
+<IMG SRC="Media/WiringDiagram2" width="250" height="156"> 
 	
 ### Issues 
 The code and wiring of this product was functioning, but it did not meet the goals set at the beginning of the project, so heres an anthology of everything that went wrong: 
