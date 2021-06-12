@@ -1,6 +1,6 @@
 # SCARA Electromagnetic Arm 
 
-## Pre-Project Planning
+<summary><b>Pre-Project Planning</b></summary>
 <p>
   
   ### Goal
@@ -9,20 +9,7 @@
   ### Specifics
  Will be a SCARA type robot arm and will utilise inverse kinematics in order to move in the x and y plane. Inverse kinematics refers to positioning and moving the arm based on calculated joint angles. The arm will be fixed in the y-direction and an electromagnet will be used to lift and sort pieces. The desired positioning values will be entered into the robot via a computer interface. 
       
-  ### Materials
-  * 1 Metro M0 Express
-  * 1 LCD Screen
-  * 1 LCD Backpack
-  * 2 Panel Mount Potentiometers
-  * 1 Panel Mount Switch
-  * 2 Continous Servos
-  * 1 Continous Micro-Servo
-  * 3D Printed Arm
-  * Laser Cut Acrylic Box
-  * 3D Printed Joint Brackets
-  * Various 4-40 Bolts
-  * 4-40 Nuts
-  
+      
  ### Code 
   
 <details><summary>Pseudocode 1</summary>
@@ -226,6 +213,7 @@ while True:
         time.sleep(0.0)
 
  ```
+ Write up: The final code for this project did not include our original goal of utilizing kinematics so that 
 	
 </details>
 	
@@ -330,22 +318,29 @@ This week I had to make a bunch of small, but time consuming changes in CAD. I m
 
 ## Project Obituary
 We were not able to finish the project; here is what we have done and what went wrong.
+	
+	
+### Code (Georgia) 
 
+### Final Product
+One of the main goals for the code of this project was to use kinematics in order to make the servos move in sync, reading angles and then adjusting based on input coordinates but this was not accomplished. The final product used potentiometers to adjust three servos, two of which were standard servos meant to make up the arm, and a third which was continuous in order to serve as the pulley system for the magnet. The potentiometer for the first two servos adjusted their angles directly and the third adjusted the throttle of the continuous servo. The wiring and code for this setup was completed, but it was not uploaded to a prototyping shield or added to the CAD arm structure. Below are photos and videos of the final setup as well as an annotated copy of the final code. 
+
+### Issues 
+The code and wiring of this product was functioning, but it did not meet the goals set at the beginning of the project, so heres an anthology of everything that went wrong: 
+	
+#### Time
+Its worth noting that time management was one of the major issues I had with this project. My biggest misstep was underestimating how much time I would need to actually write the code. I spent much too much time researching kinematics, thinking that once I understood it I could easily write a basic potentiometer-servo code, add in kinematics and be done with the project. However, it took much longer than I had anticipated to get a basic code up and running, so that basic code ended up becoming my final code for the project. 
+	
+#### CircuitPython Library Issues
+One of the factors that contributed to the time it took to write basic code were the issues I had with writing CircuitPython. I was accostomed to writing in C++, which not only had a strong online community with often updated and easily searchable instructive databases, but did not require the system of libraries necessary to write in python. Originally, I made the mistake of using continuous servos, with a continuous servo code, when I really needed code for standard servos. Once I switched over to standard servos, I continued to use the same continuous servo code format. When I realized that using continuous servo functions for a standard angle servo made specifically adjusting the angle impossible, I started to work on rewriting my code with standard servo functions and this is where the library issues began. As I mentioned before, CircuitPython does not have the same strong online community as C++ does. Because of this, I could only find one real 'how-to' page related to using servos in CircuitPython [(linked here)](https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo). The issue was that this webpage was written in 2018, using a much older version of CircuitPython (there are currently 7 versions, I was writing in 6, the most recent stable edition) 
+	
+	
+	
 ### CAD (Alden)
-#### Final Product
-By the end of the year I finished all of the CAD and fulfilled all of the goals set at the beginning of the project. Using two servo joints, the arm is able to reach anywhere within the radius of the length of the arm fully extended. (about 8 inches) The movement would be controlled by two potentiometers which could be used to input either the desired x and y coordinates, or desired angles of each servo, depending on the type of movement programmed at the time. These positional values would then be displayed on the LCD screen. The switch controls a servo on the second arm, which raises or lowers a magnet atttached by a string that is in the cylinder extending from the end. This would increase or decrease the distance of the magnet from the surface, changing the magnetic attraction, and allowing the arm to pick up or drop magnetic pieces, like nuts or bolts. <br/>
-The first joint allows it to move like this, pointing in any direction.
+### Final Product
+By the end of the year I finished all of the CAD and fulfilled all of the goals set at the beginning of the project. Using two servo joints, the arm is able to reach anywhere within the radius of the length of the arm fully extended. (about 8 inches) <br/>
+The first joint allows it to move like this, pointing towards any direction.
 <br/> <IMG SRC="Media/1stJointGif.gif" width="300" height="208"> <br/>
 The second joint allows the length of the arm to be changed so it can reach any distance within the full extension and the limit of how acute the angle between the first and second arms can become.
-<br/> <IMG SRC="Media/2ndJointGif.gif" width="300" height="169"> <br/>
-In combination, these allow the end of the arm to move to any point between the radius of the arm fully extended and the radius of the arm fully bent.<br/>
-Here is a picture of the final iteration of the 3d design for the arm.
-<br/> <IMG SRC="Media/FinalCAD.png" width="300" height="209"> <br/>
 
-#### Why Didn't I Finish
-Numerous factors, some in my control, some out of my control, led to my inability to finish building the arm on time. The fact that roughly 3/4 of the time I spent working on the project was at home rather than in school created several challenges. Since many of the materials used in the CAD model weren't availible to me when I was making the arm, it was hard to get a sense of the scale of the arm. This also meant that it was harder to get a sense for how the different parts would interact. Also, I didn't have the specific dimensions for many of the holes for bolts and other components. All of these led to having to fix many small, hard to find problems, which took a lot of the time once I returned to school.
-
-#### What Could I Have Done Better
-If I were to go back and do this project again, there are a few aspects of my method that I would change to mitigate some of the delaying factors listed above. One thing that would have been helpful would be asking for more help with specific dimensions and review of design, which could have prevented having to make as many changes after the initial design. The other main area that I could have improved in would have been motivation in working on the project at home. Given the completely online format of school for most of the project, I found it hard to make myself work on the design, so more strict scheduling could have helped force progress. In hindsight, there were also areas of my design process in Onshape that could have been better in terms of use of project studios and context editing. The greatest design challenge was creating the servo brackets, so that is what I would reccomend focusing on if another group were to try to do a similar project.
-	
-### Code (Georgia)
+In combination, these allow the end of the arm to move to any point between the radius of the arm fully extended and the radius of the arm fully bent.
