@@ -9,6 +9,17 @@
   ### Specifics
  Will be a SCARA type robot arm and will utilise inverse kinematics in order to move in the x and y plane. Inverse kinematics refers to positioning and moving the arm based on calculated joint angles. The arm will be fixed in the y-direction and an electromagnet will be used to lift and sort pieces. The desired positioning values will be entered into the robot via a computer interface. 
       
+### Materials
+	- Arduino Metro M0
+	- Breadboard
+	- Wires
+	- 3 potentiometers
+	- 2 standard angle servos
+	- 1 continuous servo 
+	- USB cable
+	- Computer
+	- Plastic for 3D printed parts
+	- Acrilyic for base 
       
  ### Code 
   
@@ -386,6 +397,9 @@ while True:
  ```
 	
 </details>
+	
+#### Wiring
+	<IMG SRC="Media/.PNG" width="250" height="151"> <br/>
 	
 ### Issues 
 The code and wiring of this product was functioning, but it did not meet the goals set at the beginning of the project, so heres an anthology of everything that went wrong: 
